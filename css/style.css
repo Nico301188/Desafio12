@@ -1,0 +1,65 @@
+/* Estilo para los círculos */
+
+div {
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    left: 75px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+div:nth-child(2) {
+    top: 150px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+div:nth-child(3) {
+    top: 125px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    z-index: -2;
+}
+
+div:nth-child(4) {
+    top: 100px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: -3;
+}
+
+/* Estilo para el select */
+#coloresSelect {
+    margin: 10px;
+}
+
+/* Estilo para el checkbox */
+#modoSuperpuestoCheckbox {
+    margin: 10px;
+}
+
+/* Estilo para el botón de reset */
+#resetButton {
+    margin: 10px;
+}
+
+/* Cambios de estilo específicos cuando la resolución es menor a 500px */
+@media (max-width: 500px) {
+    div{
+        cursor: not-allowed;
+    }
+
+    #modoSuperpuestoCheckbox ,
+    #coloresSelect ,
+    #resetButton {
+        cursor: not-allowed;
+    }
+}
